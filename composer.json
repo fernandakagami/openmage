@@ -1,0 +1,17 @@
+{
+    "require": {
+        "aydin-hassan/magento-core-composer-installer": "*",
+        "openmage/magento-lts": "^20.0",
+        "n98/magerun": "2.3.0"
+    },
+    "extra": {
+        "magento-core-package-type": "magento-source",
+        "magento-root-dir": "htdocs"
+    },
+    "config": {
+        "allow-plugins": {
+            "aydin-hassan/magento-core-composer-installer": true,
+            "magento-hackathon/magento-composer-installer": true
+        }
+    }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <CursoMagento_SampleModule>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mage_Core />
+            </depends>
+        </CursoMagento_SampleModule>
+    </modules>
+</config>
