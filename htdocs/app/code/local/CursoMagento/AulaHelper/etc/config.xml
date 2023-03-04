@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <CursoMagento_AulaHelper>
+            <version>0.1.0.0</version>
+        </CursoMagento_AulaHelper>
+    </modules>
+    <global>
+        <helpers>
+            <cursomangento_aulahelper>
+                <class>CursoMagento_AulaHelper_Helper</class>
+            </cursomangento_aulahelper>
+        </helpers>
+    </global>
+    <frontend>
+        <routers>
+            <CursoMagento_AulaHelper>             
+                <use>standard</use>
+                <args>
+                    <module>CursoMagento_AulaHelper</module>
+                    <frontName>aulaHelper</frontName>
+                </args>        
+            </CursoMagento_AulaHelper>
+        </routers>
+        <translate>
+            <modules>
+                <CursoMagento_AulaHelper>
+                    <files>
+                        <default>CursoMagento_AulaHelper.csv</default>
+                    </files>
+                </CursoMagento_AulaHelper>
+            </modules>
+        </translate>
+    </frontend>
+</config>
