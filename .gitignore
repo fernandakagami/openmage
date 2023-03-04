@@ -1,4 +1,3 @@
 # magento gitignore from htdocs
 
-htdocs/var/*/
-!htdocs/var/.htaccess
+htdocs/var/
