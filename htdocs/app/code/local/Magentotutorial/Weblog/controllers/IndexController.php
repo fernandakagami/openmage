@@ -18,7 +18,8 @@ class Magentotutorial_Weblog_IndexController extends Mage_Core_Controller_Front_
     }
 
     public function createNewPostAction() {            
-        $data = json_decode(file_get_contents('php://input'), true);        
+        //$data = json_decode(file_get_contents('php://input'), true);
+        $data = json_decode($this->getRequest()->getRawBody(), true);
         $blogpost = Mage::getModel('weblog/blogpost');
         $blogpost->setTitle($data['title']);
         $blogpost->setPost($data['post']);
@@ -27,7 +28,8 @@ class Magentotutorial_Weblog_IndexController extends Mage_Core_Controller_Front_
     }
 
     public function updatePostAction() {
-        $data = json_decode(file_get_contents('php://input'), true);
+        //$data = json_decode(file_get_contents('php://input'), true);
+        $data = json_decode($this->getRequest()->getRawBody(), true);
         $params = $this->getRequest()->getParams();        
         $blogpost = Mage::getModel('weblog/blogpost');        
         $blogpost->load($params['id']);
