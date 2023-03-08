@@ -23,8 +23,7 @@ class Magentotutorial_Weblog_IndexController extends Mage_Core_Controller_Front_
         $blogpost->setTitle($data['title']);
         $blogpost->setPost($data['post']);
         $blogpost->setDate((new DateTime())->format('Y-m-d H:i:s'));
-        $blogpost->save();
-        echo 'post with ID ' . $blogpost->getId() . ' created';
+        $blogpost->save();        
     }
 
     public function updatePostAction() {
@@ -35,17 +34,14 @@ class Magentotutorial_Weblog_IndexController extends Mage_Core_Controller_Front_
         $blogpost->setTitle($data['title']);
         $blogpost->setPost($data['post']);
         $blogpost->setTimestamp((new DateTime())->format('Y-m-d H:i:s'));   
-        $blogpost->save();
-        echo 'post edited';
+        $blogpost->save();        
     }
 
     public function deletePostAction() {
         $params = $this->getRequest()->getParams();
         $blogpost = Mage::getModel('weblog/blogpost');
-        $blogpost->load($params['id']);
-        echo("Deleting the blogpost with an ID of ".$params['id']."<br/>");
-        $blogpost->delete();
-        echo("The blogpost with an ID of ".$params['id']." has been deleted"."<br/>");
+        $blogpost->load($params['id']);        
+        $blogpost->delete();        
     }   
     
 }
