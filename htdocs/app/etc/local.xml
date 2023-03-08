@@ -22,10 +22,10 @@
 <config>
     <global>
         <install>
-            <date><![CDATA[Fri, 03 Mar 2023 19:45:17 +0000]]></date>
+            <date><![CDATA[Mon, 06 Mar 2023 13:27:06 +0000]]></date>
         </install>
         <crypt>
-            <key><![CDATA[1ce208951fcb7b0b57f803ea62bba61a]]></key>
+            <key><![CDATA[3a39c16db4c43744c4ead9fc089981a8]]></key>
         </crypt>
         <disable_local_modules>false</disable_local_modules>
         <resources>
@@ -34,10 +34,10 @@
             </db>
             <default_setup>
                 <connection>
-                    <host><![CDATA[db]]></host>
+                    <host><![CDATA[openmage-database]]></host>
                     <username><![CDATA[root]]></username>
-                    <password><![CDATA[root]]></password>
-                    <dbname><![CDATA[db_2]]></dbname>
+                    <password><![CDATA[secret]]></password>
+                    <dbname><![CDATA[magento]]></dbname>
                     <initStatements><![CDATA[SET NAMES utf8]]></initStatements>
                     <model><![CDATA[mysql4]]></model>
                     <type><![CDATA[pdo_mysql]]></type>

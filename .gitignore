@@ -5,3 +5,5 @@ htdocs/var/locks
 htdocs/var/log
 htdocs/var/report
 htdocs/var/session
+
+vendor

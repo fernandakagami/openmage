@@ -2,11 +2,9 @@
 <config>
     <modules>
         <CursoMagento_SampleModule>
-            <active>true</active>
+            <active>false</active>
             <codePool>local</codePool>
-            <depends>
-                <Mage_Core />
-            </depends>
+            <depends><Mage_Core /></depends>
         </CursoMagento_SampleModule>
     </modules>
 </config>

@@ -2,7 +2,7 @@
 <config>
     <modules>
         <CursoMagento_PrimeiroController>
-            <active>true</active>
+            <active>false</active>
             <codePool>local</codePool>
         </CursoMagento_PrimeiroController>
     </modules>
