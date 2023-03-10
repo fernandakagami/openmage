@@ -1,0 +1,23 @@
+<?php $posts = $this->post; ?>
+
+<table>
+    <tr>
+        <th>Post ID</th>
+        <th>Post Title</th>
+        <th>Content</th>
+        <th>Updated At</th>
+        <th>Created At</th>
+    </tr>
+    <?php foreach($posts as $post): ?>
+        <tr>
+            <td><?= $post['blogpost_id'] ?></td>
+            <td><?= $post['title'] ?></td>
+            <td><?= $post['post'] ?></td>
+            <td><?= $post['date'] ?></td>
+            <td><?= $post['timestamp'] ?></td>
+        </tr>
+    <?php endforeach ?>
+</table>
+
+
+

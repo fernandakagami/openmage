@@ -2,10 +2,18 @@
 
 class Magentotutorial_Weblog_IndexController extends Mage_Core_Controller_Front_Action {
 
-    public function showAllBlogPostsAction() {
-        $posts = Mage::getModel('weblog/blogpost')->getCollection();  
-        header('Content-type: application/json');
-        echo json_encode($posts->getData());        
+    public function indexAction() {
+        
+        $posts = Mage::getModel('weblog/blogpost')->getCollection();        
+        $postsData = $posts->getData();
+
+        $this->loadLayout();
+
+        $crud = $this->getLayout()->getBlock("conteudo");
+
+        $crud->setData('post', $postsData);
+        
+        $this->renderLayout();
     }
         
     public function readPostAction() {
