@@ -10,9 +10,8 @@ class Magentotutorial_Weblog_IndexController extends Mage_Core_Controller_Front_
         $this->loadLayout();
 
         $crud = $this->getLayout()->getBlock("conteudo");
-
         $crud->setData('post', $postsData);
-        
+                
         $this->renderLayout();
     }
         

@@ -27,6 +27,16 @@
                 </setup>
             </weblog_setup>
         </resources>
+        <events>
+            <catalog_product_save_before>
+                <observers>
+                    <magentotutorial_weblog_catalog_product_save_before>
+                        <class>weblog/observer</class>
+                        <method>productSaveBefore</method>
+                    </magentotutorial_weblog_catalog_product_save_before>
+                </observers>
+            </catalog_product_save_before>
+        </events>
     </global>
     <frontend>
         <routers>
